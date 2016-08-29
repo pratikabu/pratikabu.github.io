@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<title>US Appointment Wait Time</title>
+		<meta http-equiv="Access-Control-Allow-Origin" content="*" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<style>
+			table {
+				border-collapse: collapse;
+			}
+
+			table, th, td {
+				border: 1px solid black;
+				padding: 10px;
+			}
+		</style>
+		
+		<script type="text/javascript">
+			var allUrlsCount = 0;
+			
+			function refreshDays() {
+				$("#refreshId").attr("disabled", true);
+				$(".result").html("--");
+				loadAllCitiesData();
+			}
+			
+			function loadAllCitiesData() {
+				var url = "https://travel.state.gov/content/travel/resources/database/database.getVisaWaitTimes.html?aid=VisaWaitTimesHomePage&cid=";
+				loadWaitTimeData(url, "P85", "hydId");
+				loadWaitTimeData(url, "P48", "chnId");
+				loadWaitTimeData(url, "P139", "mumId");
+				loadWaitTimeData(url, "P147", "ndId");
+				loadWaitTimeData(url, "P100", "kolId");
+			}
+			
+			function loadWaitTimeData(url, cid, resultId) {
+				allUrlsCount++;
+				$.ajax({
+					url: url + cid,
+					crossDomain: true,
+					cache: false,
+					success: function(result) {
+						$("#" + resultId).html(result.split(",")[2]);
+					},
+					complete: function() {
+						if(0 == --allUrlsCount) {
+							$("#refreshId").attr("disabled", false);
+						}
+					}
+				});
+			}
+			
+			$(document).ready(function() {
+				$("#refreshId").click(function() {
+					refreshDays();
+				});
+				
+				refreshDays();
+			});
+		</script>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th>City</th>
+				<th>Appointment Wait Time</th>
+			<tr>
+			<tr>
+				<td>Hyderabad</td>
+				<td class="result" id="hydId">--</td>
+			</tr>
+			<tr>
+				<td>Chennai</td>
+				<td class="result" id="chnId">--</td>
+			</tr>
+			<tr>
+				<td>Mumbai</td>
+				<td class="result" id="mumId">--</td>
+			</tr>
+			<tr>
+				<td>New Delhi</td>
+				<td class="result" id="ndId">--</td>
+			</tr>
+			<tr>
+				<td>Kolkata</td>
+				<td class="result" id="kolId">--</td>
+			</tr>
+		</table>
+		<br>
+		<input type="button" id="refreshId" value="Refresh" />
+	</body>
+</html>
