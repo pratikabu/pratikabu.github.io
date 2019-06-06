@@ -38,7 +38,7 @@
 			function onLoadContent() {
 				var version = getParameterByName("v");
 				if(!version) {
-					version = "4.4";
+					version = "4.5";
 				}
 				
 				var d = document.getElementById("v" + version);
@@ -61,10 +61,76 @@
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</div>
 				
+				<div id="v4.7.5" class="releaseDiv">
+					<div align="left" class="topic line"><h2>Changes in Version 4.7.5:</h2></div>
+					<ul align="justify" class="documentContent">
+						<li>Dual Arrow issues has been fixed, including <a href="https://github.com/pratikabu/scrolltotop/issues/58">issue 58</a>.</li>
+						<li>Fixed jQuery related issues on Options page.</li>
+					</ul>
+				</div>
+				
+				<div id="v4.7" class="releaseDiv">
+					<div align="left" class="topic line"><h2>Changes in Version 4.7:</h2></div>
+					<ul align="justify" class="documentContent">
+						<li><b>Common</b>
+							<ul>
+								<li>The <a href="https://github.com/pratikabu/scrolltotop/issues/56">issue 56</a> with Base64 Image has been fixed.</li>
+								<li>Upgraded to latest <a href="https://blog.jquery.com/2017/03/20/jquery-3-2-1-now-available/">jQuery</a> version.</li>
+							</ul>
+						</li>
+						<li><b>Chrome</b>
+							<ul>
+								<li>Migrated to new chrome.storage API to store settings in cloud.</li>
+								<li>The settings will now be synced across your devices, via <a href="https://support.google.com/chrome/answer/165139">Chrome Sync</a>.</li>
+								<li>Only "Use my icon" setting will be stored locally due to storage API <a href="https://developer.chrome.com/extensions/storage#property-sync">size quota limitation</a>.</li>
+							</ul>
+						</li>
+						<li><b>Firefox</b>
+							<ul>
+								<li>Upgraded the addon to the new supported <a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions">WebExtensions</a>.</li>
+								<li>The settings will now be synced across your devices, via <a href="https://www.mozilla.org/en-US/firefox/features/sync/">Firefox Sync</a>.</li>
+								<li>The settings will be reset as the underlying architecture is completely changed in WebExtensions.</li>
+							</ul>
+						</li>
+						<li><b>Opera</b>
+							<ul>
+								<li>Migrated to new chrome.storage API.</li>
+								<li>Since cloud storage is not supported on Opera, settings will be stored in local computer only.</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+				<div id="v4.6" class="releaseDiv">
+					<div align="left" class="topic line"><h2>Changes in Version 4.6 (Chrome & Opera):</h2></div>
+					<ul align="justify" class="documentContent">
+						<li>Upgraded under the hood core API.</li>
+					</ul>
+				</div>
+				
+				<div id="v4.5.5" class="releaseDiv">
+					<div align="left" class="topic line"><h2>Changes in Version 4.5.5 (Firefox Only):</h2></div>
+					<ul align="justify" class="documentContent">
+						<li>Migrated to new JPM framework for better stability.
+						<a href="https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jpm" target="_blank">Click here</a>
+						to read more on Firefox JPM.</li>
+					</ul>
+				</div>
+				
+				<div id="v4.5.2" class="releaseDiv">
+					<div align="left" class="topic line"><h2>Changes in Version 4.5.2:</h2></div>
+					<ul align="justify" class="documentContent">
+						<li>Removed tabs permission for Chrome and Opera release, as part of this removed one small feature.
+						<a href="whypermission.html" target="_blank">Click here</a>
+						to read more on permission issue.</li>
+					</ul>
+				</div>
+				
 				<div id="v4.5.1" class="releaseDiv">
-					<div align="left" class="topic line"><h2>Changes in Version 4.5.1 (Firefox Only):</h2></div>
+					<div align="left" class="topic line"><h2>Changes in Version 4.5.1:</h2></div>
 					<ul align="justify" class="documentContent">
 						<li>Fixed settings page issue in latest Firefox releases.</li>
+						<li>Fixed settings page issue in latest Chrome and Opera releases.</li>
 					</ul>
 				</div>
 				
