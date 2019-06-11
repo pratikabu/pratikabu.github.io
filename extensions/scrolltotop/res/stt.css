@@ -8,24 +8,25 @@
 }
 
 a#donateButton {
-	font: bold 16px Arial,Helvetica,sans-serif;
-	text-shadow: 0 -1px 1px rgba(0,0,0,0.25), -2px 0 1px rgba(0,0,0,0.25);
+	font: bold 16px Courier New;
+/* 	text-shadow: 0 -1px 1px rgba(0,0,0,0.25), -2px 0 1px rgba(0,0,0,0.25); */
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
 	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
 	display: inline-block;
-	color: white;
+	color: #23282e;
 	padding: 5px 10px 5px;
 	white-space: nowrap;
 	text-decoration: none;
 	cursor: pointer;
-	background: #4699DA;
+	background: #ccf7c7;
 	border-style: none;
 	text-align: center;
 	overflow: visible;
 	margin-bottom: 5px;
+	border: 1px SOLID #cdcfd1;
 }
 
 a#donateButton:active {
@@ -34,7 +35,7 @@ a#donateButton:active {
 }
 
 .topic h2 {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Courier New;
 	font-size: 16px;
 	clear: left;
 	margin-bottom: 0;
