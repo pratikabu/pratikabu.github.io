@@ -48,13 +48,21 @@ a#donateButton:active {
 
 .releaseDiv {
 	padding: 5px;
-	boder: 1px SOLID WHITE;
+	border: 1px SOLID WHITE;
 	border-radius: 3px;
 	margin-top: 5px;
 }
 
 .releaseDiv:hover {
 	background: whitesmoke;
+}
+
+.releaseDiv .documentContent {
+	text-align: justify;
+}
+
+.releaseDiv .topic {
+	text-align: left;
 }
 
 .higlightedReleaseDiv {
@@ -70,4 +78,8 @@ a#donateButton:active {
 	letter-spacing: -1.5px;
 	font-weight: bold;
 	background-size: 48px 48px;
+}
+
+.sub-topic {
+	font-weight: bold;
 }
