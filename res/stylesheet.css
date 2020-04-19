@@ -4,7 +4,7 @@ body {
 	font-family: 'IBM Plex Sans', sans-serif;
 	text-align: justify;
 	font-size: 16px;
-	padding: 10px;
+	padding: 10px 0 10px;
 }
 
 .contentHeader {
@@ -29,7 +29,6 @@ a:hover {
 a.menuLink {
 	font-size: 16px;
 }
-
 a.menuLink:link {
 	color: #9B2D2D;
 	text-decoration: none;
@@ -71,7 +70,7 @@ a.menuLink:hover {
 }
 
 a img{
-border:0;
+	border:0;
 }
 
 .projectBox {
@@ -98,10 +97,6 @@ border:0;
 
 .projectName {
 	font-size: 24px;
-}
-
-html {
-	height: 100%
 }
 
 .products-section ul {
@@ -135,6 +130,7 @@ html {
 .products-section li p {
 	margin: 0 2em 0 0;
 	font-size: 14px;
+	margin-left: 48px;
 }
 
 .mainwidth {
@@ -266,5 +262,36 @@ h2 {
 
 	.higlightedReleaseDiv {
 		background: #445013;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.mainwidth {
+		width: 800px;
+	}
+}
+
+@media screen and (max-width: 820px) {
+	.mainwidth {
+		width: 700px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.mainwidth {
+		width: 600px;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.mainwidth {
+		width: 100%;
+	}
+
+	.products-section li {
+		display: block;
+		float: none;
+		position: relative;
+		width: auto;
 	}
 }
