@@ -2,18 +2,16 @@
 
 body {
 	font-family: 'IBM Plex Sans', sans-serif;
+	text-align: justify;
+	font-size: 16px;
+	padding: 10px;
 }
 
-.footerText {
-	font-size: 11px;
-	color: #666666;
-}
 .contentHeader {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 30px;
 	color: #0070C0;
 }
-.documentContent {font-size: 16px; }
 
 a:link {
 	color: #15C;
@@ -50,33 +48,25 @@ a.menuLink:hover {
 }
 
 .headerSlot {
-	width: 100%;
-	border-bottom: 1px SOLID #CBCBCB;
 	padding-bottom: 5px;
+	margin: 10px 0 10px;
 }
 
 .footerSlot {
-	width: 100%;
 	border-top: 1px SOLID #CBCBCB;
-	background-color: #F8F8F8;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	position: absolute;
 	bottom: 0;
-	left: 0;
-}
-
-.headerMenuDiv {
 }
 
 .headerMenuDiv ul {
 	list-style-type: none;
 	margin: auto;
 	padding: 0px;
-	padding-left: 4px;
 }
 .headerMenuDiv li {
-	float: left;
+	display: inline-block;
 	padding-right: 20px;
 }
 
@@ -110,57 +100,8 @@ border:0;
 	font-size: 24px;
 }
 
-.zeroMargin {
-	min-height: 100%;
-	margin: 0;
-	position: relative;
-}
-
 html {
 	height: 100%
-}
-
-.mainContent {
-	width: 100%;
-	position: relative;
-	padding: 0 0 75px;
-}
-
-.myWork, .myResume, .contactMe {
-	font-size: 14px;
-	text-indent: 36px;
-	line-height: 45px;
-	background: url(my_work.png) no-repeat;
-	text-indent: 35px;
-	display: inline-block;
-}
-
-.myWork, .myResume, .contactMe {
-	background: url(my_work.png) no-repeat;
-	font-size: 14px;
-	line-height: 32px;
-	text-indent: 35px;
-	display: inline-block;
-	margin-right: 20px;
-}
-
-.myResume {
-	background: url(my_resume.png) no-repeat;
-}
-
-.contactMe {
-	background: url(contact_me.png) no-repeat;
-}
-
-.products-section h2 {
-	border-bottom: 1px solid #EBEBEB;
-	clear: left;
-	margin-bottom: 0;
-	padding-bottom: 0;
-}
-
-.products-section {
-	width: 970px;
 }
 
 .products-section ul {
@@ -192,7 +133,138 @@ html {
 }
 
 .products-section li p {
-	color: #444;
 	margin: 0 2em 0 0;
 	font-size: 14px;
+}
+
+.mainwidth {
+	width: 970px;
+	margin: auto;
+}
+
+.myname {
+    font-size: 40px;
+	font-weight: bold;
+}
+
+.myname .firstname {
+    color: RED;
+}
+
+.myname .lastname {
+    color: #016fc0;
+}
+
+.tableClass {
+	border: 1px SOLID #2094F0;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	background: WHITESMOKE;
+	width: 400px;
+	margin-bottom: 20px;
+}
+
+a#donateButton {
+	font: 16px;
+/* 	text-shadow: 0 -1px 1px rgba(0,0,0,0.25), -2px 0 1px rgba(0,0,0,0.25); */
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	display: inline-block;
+	color: #23282e;
+	padding: 5px 10px 5px;
+	white-space: nowrap;
+	text-decoration: none;
+	cursor: pointer;
+	background: #ccf7c7;
+	border-style: none;
+	text-align: center;
+	overflow: visible;
+	margin-bottom: 5px;
+	border: 1px SOLID #cdcfd1;
+}
+
+a#donateButton:active {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+h2 {
+	font-size: 18px;
+	margin-bottom: 0;
+}
+
+.releaseDiv {
+	padding: 5px;
+	border-radius: 3px;
+	margin-top: 5px;
+}
+
+.releaseDiv .documentContent {
+	text-align: justify;
+}
+
+.releaseDiv .topic {
+	text-align: left;
+}
+
+.higlightedReleaseDiv {
+	background: #FFF479;
+}
+
+.sub-topic {
+	font-weight: bold;
+}
+
+@media (prefers-color-scheme: dark) {
+	body, .tableClass {
+		background: #3b3e43;
+	}
+
+	body, .releaseDiv .documentContent {
+		color: #b8bcbf;
+	}
+
+	.contentHeader {
+		color: #e6e6e6;
+	}
+
+	h2 {
+		color: WHITE;
+	}
+
+	a.menuLink:visited, a.menuLink:link, a:visited, a:link {
+		color: #e8de57;
+	}
+
+	a.menuLink:hover, a:hover {
+		color: #00ff2d;
+	}
+
+	a#donateButton:hover {
+		background: #054377;
+	}
+
+	a#donateButton {
+		background: #055777;
+		color: WHITE;
+	}
+
+	.tableClass {
+		border: 1px SOLID;
+	}
+
+	.headerSlot, .tableClass {
+		border-color: GRAY;
+	}
+
+	.footerSlot {
+		background-color: #949494;
+	}
+
+	.higlightedReleaseDiv {
+		background: #445013;
+	}
 }
