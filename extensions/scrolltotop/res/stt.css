@@ -8,7 +8,7 @@
 }
 
 a#donateButton {
-	font: bold 16px Courier New;
+	font: 16px Courier New;
 /* 	text-shadow: 0 -1px 1px rgba(0,0,0,0.25), -2px 0 1px rgba(0,0,0,0.25); */
 	border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -48,13 +48,8 @@ a#donateButton:active {
 
 .releaseDiv {
 	padding: 5px;
-	border: 1px SOLID WHITE;
 	border-radius: 3px;
 	margin-top: 5px;
-}
-
-.releaseDiv:hover {
-	background: whitesmoke;
 }
 
 .releaseDiv .documentContent {
@@ -82,4 +77,52 @@ a#donateButton:active {
 
 .sub-topic {
 	font-weight: bold;
+}
+
+
+@media (prefers-color-scheme: dark) {
+	body, .tableClass {
+		background: #3b3e43;
+	}
+
+	body {
+		color: WHITE;
+	}
+
+	a.menuLink:visited, a.menuLink:link, a:visited, a:link {
+		color: #e8de57;
+	}
+
+	a.menuLink:hover, a:hover {
+		color: #00ff2d;
+	}
+
+	.releaseDiv .documentContent {
+		color: #b8bcbf;
+	}
+
+	a#donateButton:hover {
+		background: #054377;
+	}
+
+	a#donateButton {
+		background: #055777;
+		color: WHITE;
+	}
+
+	.contentHeader {
+		color: #b8bcbf;
+	}
+
+	.tableClass {
+		border: 1px SOLID GRAY;
+	}
+
+	.headerSlot, .line {
+		border-color: GRAY;
+	}
+
+	.footerSlot {
+		background-color: #949494;
+	}
 }
