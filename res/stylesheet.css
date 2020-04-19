@@ -4,6 +4,7 @@ body {
 	font-family: 'IBM Plex Sans', sans-serif;
 	text-align: justify;
 	font-size: 16px;
+	padding: 10px;
 }
 
 .contentHeader {
@@ -97,12 +98,6 @@ border:0;
 
 .projectName {
 	font-size: 24px;
-}
-
-.zeroMargin {
-	min-height: 100%;
-	margin: 0;
-	position: relative;
 }
 
 html {
