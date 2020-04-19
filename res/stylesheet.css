@@ -2,6 +2,7 @@
 
 body {
 	font-family: 'IBM Plex Sans', sans-serif;
+	text-align: justify;
 }
 
 .footerText {
@@ -50,33 +51,25 @@ a.menuLink:hover {
 }
 
 .headerSlot {
-	width: 100%;
-	border-bottom: 1px SOLID #CBCBCB;
 	padding-bottom: 5px;
+	margin: 10px 0 10px;
 }
 
 .footerSlot {
-	width: 100%;
 	border-top: 1px SOLID #CBCBCB;
-	background-color: #F8F8F8;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	position: absolute;
 	bottom: 0;
-	left: 0;
-}
-
-.headerMenuDiv {
 }
 
 .headerMenuDiv ul {
 	list-style-type: none;
 	margin: auto;
 	padding: 0px;
-	padding-left: 4px;
 }
 .headerMenuDiv li {
-	float: left;
+	display: inline-block;
 	padding-right: 20px;
 }
 
@@ -195,4 +188,22 @@ html {
 	color: #444;
 	margin: 0 2em 0 0;
 	font-size: 14px;
+}
+
+.mainwidth {
+	width: 970px;
+	margin: auto;
+}
+
+.myname {
+    font-size: 40px;
+	font-weight: bold;
+}
+
+.myname .firstname {
+    color: RED;
+}
+
+.myname .lastname {
+    color: #016fc0;
 }
