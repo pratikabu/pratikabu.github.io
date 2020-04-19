@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+
+body {
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
 .footerText {
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 11px;
 	color: #666666;
 }
@@ -8,7 +13,7 @@
 	font-size: 30px;
 	color: #0070C0;
 }
-.documentContent {font-family: Courier New; font-size: 14px; }
+.documentContent {font-size: 16px; }
 
 a:link {
 	color: #15C;
@@ -24,7 +29,6 @@ a:hover {
 }
 
 a.menuLink {
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
 }
 
@@ -41,7 +45,6 @@ a.menuLink:hover {
 	text-decoration: none;
 }
 .menuDisabled {
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	color: #666666;
 }
@@ -107,13 +110,6 @@ border:0;
 	font-size: 24px;
 }
 
-.introText {
-	font-family: Arial, Helvetica, sans-serif;
-	color: #333333;
-	font-size: 18px;
-	font-weight: normal;
-}
-
 .zeroMargin {
 	min-height: 100%;
 	margin: 0;
@@ -157,8 +153,6 @@ html {
 }
 
 .products-section h2 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
 	border-bottom: 1px solid #EBEBEB;
 	clear: left;
 	margin-bottom: 0;
@@ -182,7 +176,6 @@ html {
 	float: left;
 	position: relative;
 	width: 50%;
-	font-family: Arial, Helvetica, sans-serif;
 	margin: 13px 0 8px;
 }
 
