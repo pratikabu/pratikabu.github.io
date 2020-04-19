@@ -61,6 +61,10 @@ a.menuLink:hover {
 	bottom: 0;
 }
 
+.headerMenuDiv {
+	margin-top: 10px;
+}
+
 .headerMenuDiv ul {
 	list-style-type: none;
 	margin: auto;
@@ -216,6 +220,23 @@ h2 {
 	font-weight: bold;
 }
 
+.download-icon-margin {
+	margin-right: 15px;
+}
+
+.download-icon {
+	width: 64px; height: 64px;
+}
+
+.donate-div {
+	float: right;
+	margin-top: 9px;
+}
+
+.contentHeader-div {
+	float: left;
+}
+
 @media (prefers-color-scheme: dark) {
 	body, .tableClass {
 		background: #3b3e43;
@@ -299,5 +320,19 @@ h2 {
 
 	.tableClass {
 		width: 80%;
+	}
+
+	.download-icon-margin {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.donate-div {
+		float: none;
+	}
+	
+	.contentHeader-div {
+		float: none;
 	}
 }
