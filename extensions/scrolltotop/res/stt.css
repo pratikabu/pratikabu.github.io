@@ -84,8 +84,12 @@ a#donateButton:active {
 		background: #3b3e43;
 	}
 
-	body, .releaseDiv .documentContent, .contentHeader {
+	body, .releaseDiv .documentContent {
 		color: #b8bcbf;
+	}
+
+	.contentHeader {
+		color: #e6e6e6;
 	}
 
 	h2 {
