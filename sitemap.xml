@@ -7,23 +7,16 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>http://www.pratikabu.com/</loc>
+  <loc>https://www.pratikabu.com/</loc>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://www.pratikabu.com/index.html</loc>
+  <loc>https://www.pratikabu.com/index.html</loc>
   <changefreq>weekly</changefreq>
 </url>
+
 <url>
-  <loc>http://www.pratikabu.com/portfolio.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://www.pratikabu.com/contact.html</loc>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://www.pratikabu.com/extensions/scrolltotop/index.html</loc>
-  <changefreq>weekly</changefreq>
+  <loc>https://pratikabu.com/oracletools/</loc>
+  <lastmod>2020-05-13T04:51:06+00:00</lastmod>
 </url>
 </urlset>

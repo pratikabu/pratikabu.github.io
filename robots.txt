@@ -1,0 +1,3 @@
+Sitemap: https://pratikabu.com/sitemap.xml
+User-agent: *
+Disallow: /extensions/*
