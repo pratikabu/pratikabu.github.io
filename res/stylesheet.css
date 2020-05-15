@@ -4,7 +4,8 @@ body {
 	font-family: 'IBM Plex Sans', sans-serif;
 	text-align: justify;
 	font-size: 16px;
-	padding: 10px 0 10px;
+	padding: 15px;
+	margin: 0px;
 }
 
 .contentHeader {
@@ -238,8 +239,8 @@ h2 {
 }
 
 @media (prefers-color-scheme: dark) {
-	body, .tableClass {
-		background: #3b3e43;
+	body, .tableClass, html {
+		background: #3b3e43 !important;
 	}
 
 	body, .releaseDiv .documentContent {
