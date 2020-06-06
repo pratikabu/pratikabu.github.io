@@ -213,6 +213,10 @@ h2 {
 	text-align: left;
 }
 
+.releaseDiv li {
+	margin: 7px 0;
+}
+
 .higlightedReleaseDiv {
 	background: #fffbc3;
 }
