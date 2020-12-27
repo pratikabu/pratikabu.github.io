@@ -10,6 +10,11 @@
   <loc>https://www.pratikabu.com/</loc>
   <changefreq>weekly</changefreq>
 </url>
+      
+<url>
+  <loc>https://www.pratikabu.com/donate</loc>
+  <changefreq>weekly</changefreq>
+</url>
 
 <url>
   <loc>https://pratikabu.com/oracletools/</loc>
