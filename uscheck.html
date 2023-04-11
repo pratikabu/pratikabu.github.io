@@ -39,7 +39,7 @@
 					crossDomain: true,
 					cache: false,
 					success: function(result) {
-						$("#" + resultId).html(result.split(",")[2]);
+						$("#" + resultId).html(result.split("|")[2]);
 					},
 					complete: function() {
 						if(0 == --allUrlsCount) {
